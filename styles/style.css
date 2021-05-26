@@ -1,0 +1,113 @@
+:root {
+    --gold: #FFC100;
+    --blue: #006AEB;
+    --lightBlue: #00DDFF;
+    --orange: #FF681E;
+    --yellow: #F2B705;
+    --red: #ED3423;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(120deg, #006AEB, #00DDFF);
+}
+
+main {
+    width: 100%;
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+h1 {
+    width: 100%;
+    font-size: 55px;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    text-align: center;
+    text-shadow: 2px 2px 2px #000;
+    color: #FFF;
+}
+
+/* Main Container */
+.calculator {
+    padding: 20px;
+    background: linear-gradient(120deg, #FF681E, #F2B705);
+    border: 5px solid #000;
+    border-radius: 10px;
+}
+
+/* Text Container */
+.text-input {
+    width: 400px;
+    height: 75px;
+    padding: 0 20px;
+    margin-bottom: 30px;
+    text-align: right;
+    background: linear-gradient(120deg, #0DFF18, #00E366);
+    border: 3px solid #000;
+    border-radius: 10px;
+}
+
+.text-input p {
+    font-size: 35px;
+    font-family: 'Roboto Slab', serif;
+    color: #FFF;
+    text-shadow: 3px 3px 5px #000;
+    letter-spacing: 2px;
+}
+
+.text-input h3 {
+    width: 100%;
+    height: 18px;
+    padding: 5px 0;
+    font-size: 18px;
+    font-family: 'Roboto Slab', serif;
+    letter-spacing: 2px;
+}
+
+/* Buttons Container */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(5,60px);
+    grid-gap: 8px;
+}
+
+button {
+    font-size: 30px;
+    font-family: 'Roboto Slab', serif;
+    background: inherit;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px 0 #000;
+}
+
+button:hover {
+    border: 3px solid #000;
+}
+
+button[name="AC"] {
+    grid-column: 1/4;
+}
+
+button[name="0"] {
+    grid-column: 1/3;
+}
+
+button[name="AC"]:hover {
+    background: linear-gradient(120deg, #FF0000, #FF5400);
+}
+
+button[name="equal"]:hover {
+    background: linear-gradient(120deg, #006AEB, #00DDFF);
+}
+
+button[name="divide"]:hover, button[name="multiply"]:hover,
+button[name="subtract"]:hover, button[name="add"]:hover {
+    background: linear-gradient(120deg, #0DFF18, #00E366);
+}
