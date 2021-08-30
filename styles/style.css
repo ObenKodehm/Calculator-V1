@@ -32,6 +32,14 @@ h1 {
     color: #FFF;
 }
 
+h3 {
+    text-shadow: 1px 1px 0 black;
+}
+
+p {
+    border-top: 2px solid black;
+}
+
 /* Main Container */
 .calculator {
     padding: 20px;
@@ -85,6 +93,7 @@ button {
     border: none;
     border-radius: 10px;
     box-shadow: 1px 1px 10px 0 #000;
+    text-shadow: 2px 2px 2px black;
 }
 
 button:hover {
